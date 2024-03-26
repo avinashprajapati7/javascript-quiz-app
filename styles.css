@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(157, 157, 190);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body.correct {
+  background-color: rgb(114, 211, 114);
+}
+
+body.wrong {
+  background-color: rgb(233, 90, 90);
+}
+
+.container {
+  width: 700px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 40px;
+  padding: 30px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgba(184, 177, 177, 0.85);
+  color: black;
+}
+
+.btn.correct {
+  background-color: green;
+  color: white;
+}
+
+.btn.wrong {
+  background-color: red;
+}
+
+.start-btn,
+.next-btn {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 30px;
+}
+
+.start-btn:hover,
+.next-btn:hover {
+  background-color: rgba(184, 177, 177, 0.85);
+  color: black;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.disabled {
+  cursor: default;
+  background-color: rgba(184, 177, 177, 0.85);
+  color: black;
+}
